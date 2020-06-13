@@ -20,12 +20,12 @@ import ModellingPage from "../pages/projects/ModellingPage"
 import ResultsPage from "../pages/projects/ResultsPage"
 import SafetyPage from "../pages/projects/SafetyPage"
 import OutreachAndEngagementPage from '../pages/humanPractices/OurtreachAndEngagementPage'
-
+import { config } from '../constants'
 
 class Nav extends React.Component {
     render() {
         return (
-            <BrowserRouter>
+            <BrowserRouter basename={config === "development" ? "" : "zhy"}>
                 <Menu stackable borderless id="topNav">
                     <Menu.Item to="/" as={Link}>
                         <img src={logo}/>

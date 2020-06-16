@@ -14,7 +14,7 @@ class SafetyPage extends React.Component {
                 </Grid.Column>
                 <Grid.Column width={13}>
                     <div id="safetyPageContentWrapper">
-                        <div id="safetyWiki" style={{ backgroundColor: "#e3e3e3", padding: "20px", paddingBottom: "80px" }}>
+                        <div id="safetyWiki" style={{ backgroundColor: "#e3e3e3", padding: "50px", paddingBottom: "80px" }}>
                             <Header as='h2' icon textAlign='center'>
                                 <img src={safetyIcon} style={{ height: "100px", width: "110px" }}></img>
                                 <Header.Content style={{ marginTop: "30px" }}><h1 style={{ fontSize: "30px" }}>SAFETY WIKI</h1></Header.Content>
@@ -26,7 +26,7 @@ class SafetyPage extends React.Component {
                                 <p>With procedures regarding sanitization and lab waste processing</p>
                             </div>
                         </div>
-                        <div id="guidelinnesInMolecularBiologyLaboratories" style={{ backgroundColor: "#7c7c7c", color: "#f5f5f5", padding: "20px" }}>
+                        <div id="guidelinnesInMolecularBiologyLaboratories" style={{ backgroundColor: "#a3a3a3", color: "#f5f5f5", padding: "20px" }}>
                             <Header as='h2' icon textAlign='center'>
                                 <Header.Content style={{ marginTop: "60px", marginBottom: "30px" }}><h1 style={{ fontSize: "30px", color: "#ffffff" }}>GUIDELINES IN MOLECULAR BIOLOGY LABORATORIES</h1></Header.Content>
                             </Header>

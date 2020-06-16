@@ -24,7 +24,7 @@ class HomePageSection extends React.Component {
 
     makeCards = (arr) => {
         return arr.map(ele => {
-            return <Tilt className="Tilt" style={{ width: "calc(25%)" }} options={{ reverse: true, max: 35, perspective: 1000, scale: 1, speed: 300, transition: true, axis: null, reset: true, easing: "cubic-bezier(.03,.98,.52,.99)", }}>
+            return <Tilt className="Tilt" style={{ width: "calc(25%)" }} options={{ reverse: true, max: 10, perspective: 1000, scale: 1, speed: 300, transition: true, axis: null, reset: true, easing: "cubic-bezier(.03,.98,.52,.99)", }}>
                     <Card className="Tilt-inner" id="cardsid" to={ele.route} as={Link}>
                         <Image src={ele.img} wrapped ui={false} />
                         <Card.Content>

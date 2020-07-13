@@ -1,6 +1,6 @@
 import React from 'react'
 import { Header, Icon, Card } from "semantic-ui-react"
-import team from "../../assets/data/team.js"
+import team from "../../assets/data/teamPageData"
 import StudentsSectionCards from "../../components/StudentsSectionCards"
 import SupervisorsSectionCards from "../../components/SupervisorsSectionCards"
 import "../../css/forTeamPage.css"

@@ -14,6 +14,7 @@ import humanPracticesPic from "../pics/routePic/humanPracticesPic.jpg"
 import outreachAndEngagementPic from "../pics/routePic/outreachAndEngagementPic.jpg"
 import medalsAndAwardsPic from "../pics/routePic/medalsAndAwardsPic.jpg"
 import collaborationsPic from "../pics/routePic/collaborationsPic.jpg"
+import protocolsPic from "../pics/routePic/protocolsPic.jpg"
 
 const routes = {
     home: [{
@@ -27,6 +28,11 @@ const routes = {
         title: "Description",
         img: descriptionPic,
         route: "/Description",
+        teaser: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis imperdiet felis in semper. Sed eu purus ut nisi rutrum aliquet. Donec aliquet nec magna sit amet congue. "
+    }, {
+        title: "Protocols",
+        img: protocolsPic,
+        route: "/Protocols",
         teaser: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis imperdiet felis in semper. Sed eu purus ut nisi rutrum aliquet. Donec aliquet nec magna sit amet congue. "
     }, {
         title: "Modelling",

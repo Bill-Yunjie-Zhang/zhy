@@ -1,20 +1,27 @@
 import React from 'react'
 import SideNav from "../../components/SideNav"
 import { Grid, Header, Item, List } from "semantic-ui-react"
-import safetyIcon from "../../assets/pics/Safety-Icon.png"
 import logo from "../../assets/pics/logo.png"
 import "../../css/forSafetyPage.css"
+import safetyPageData from "../../assets/data/safetyPageData"
+import TopIntro from "../../components/TopIntro"
 
 class SafetyPage extends React.Component {
     render() {
+        const introData = safetyPageData.intro
+        const mainData = safetyPageData.main
+        // console.log(introData, mainData)
         return <Grid>
             <Grid.Row>
                 <Grid.Column width={3} style={{ height: "100%" }}>
-                    <SideNav></SideNav>
+                    <SideNav sideNavData={mainData}></SideNav>
                 </Grid.Column>
                 <Grid.Column width={13}>
                     <div id="safetyPageContentWrapper">
-                        <div id="safetyWiki" style={{ backgroundColor: "#e3e3e3", padding: "50px", paddingBottom: "80px" }}>
+
+                        <TopIntro introData={introData}></TopIntro>
+
+                        {/* <div id="safetyWiki" style={{ backgroundColor: "#e3e3e3", padding: "50px", paddingBottom: "80px" }}>
                             <Header as='h2' icon textAlign='center'>
                                 <img src={safetyIcon} style={{ height: "100px", width: "110px" }}></img>
                                 <Header.Content style={{ marginTop: "30px" }}><h1 style={{ fontSize: "30px" }}>SAFETY WIKI</h1></Header.Content>
@@ -25,10 +32,12 @@ class SafetyPage extends React.Component {
                                 <p>We strictly follow the requirements and guidelines provided by iGEM headquarters. Since we are only in a BSL 1 lab, we will not use pathogenesis, and any microorganisms that belongs to high risk levels. We would also never use parts that are harmful to any animals or our surroundings. </p>
                                 <p>With procedures regarding sanitization and lab waste processing</p>
                             </div>
-                        </div>
-                        <div id="guidelinnesInMolecularBiologyLaboratories" style={{ backgroundColor: "#a3a3a3", color: "#f5f5f5", padding: "20px" }}>
+                        </div> */}
+
+
+                        <div id="guidelinnesInMolecularBiologyLaboratories" style={{ backgroundColor: "#f5f5f5", padding: "20px" }}>
                             <Header as='h2' icon textAlign='center'>
-                                <Header.Content style={{ marginTop: "60px", marginBottom: "30px" }}><h1 style={{ fontSize: "30px", color: "#ffffff" }}>GUIDELINES IN MOLECULAR BIOLOGY LABORATORIES</h1></Header.Content>
+                                <Header.Content style={{ marginTop: "60px", marginBottom: "40px" }}><h1 style={{ fontSize: "30px" }}>GUIDELINES IN MOLECULAR BIOLOGY LABORATORIES</h1></Header.Content>
                             </Header>
                             <hr></hr>
                             <div id="bringingStuffInAndOut" style={{ padding: "20px" }}>

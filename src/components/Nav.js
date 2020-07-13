@@ -20,6 +20,7 @@ import ModellingPage from "../pages/projects/ModellingPage"
 import ResultsPage from "../pages/projects/ResultsPage"
 import SafetyPage from "../pages/projects/SafetyPage"
 import OutreachAndEngagementPage from '../pages/humanPractices/OurtreachAndEngagementPage'
+import ProtocolsPage from '../pages/projects/ProtocolsPage'
 import { config } from '../constants'
 
 class Nav extends React.Component {
@@ -28,7 +29,7 @@ class Nav extends React.Component {
             <BrowserRouter basename={config === "development" ? "" : "zhy"}>
                 <Menu stackable borderless id="topNav">
                     <Menu.Item to="/" as={Link}>
-                        <img src={logo}/>
+                        <img src={logo} />
                     </Menu.Item>
 
                     <Menu.Item name='features' to="/" as={Link}>
@@ -38,6 +39,7 @@ class Nav extends React.Component {
                     <Dropdown item text='Projects'>
                         <Dropdown.Menu>
                             <Dropdown.Item name='description' to="/Description" as={Link}>Description</Dropdown.Item>
+                            <Dropdown.Item name='protocols' to="/Protocols" as={Link}>Protocols</Dropdown.Item>
                             <Dropdown.Item name='modelling' to="/Modelling" as={Link}>Modelling</Dropdown.Item>
                             <Dropdown.Item name='design' to="/Design" as={Link}>Design</Dropdown.Item>
                             <Dropdown.Item name='safety' to="/Safety" as={Link}>Safety</Dropdown.Item>
@@ -77,22 +79,23 @@ class Nav extends React.Component {
                         Collaborations
                     </Menu.Item>
                 </Menu>
-                <Route path = "/" exact={true} component={HomePage} />
-                <Route path = "/Description" exact={true} component={DescriptionPage} />
-                <Route path = "/Modelling" exact={true} component={ModellingPage} />
-                <Route path = "/Design" exact={true} component={DesignPage} />
-                <Route path = "/Safety" exact={true} component={SafetyPage} />
-                <Route path = "/Lab-Book" exact={true} component={LabBookPage} />
-                <Route path = "/Demonstration" exact={true} component={DemonstrationPage} />
-                <Route path = "/Results" exact={true} component={ResultsPage} />
-                <Route path = "/Team" exact={true} component={TeamPage} />
-                <Route path = "/Attribution" exact={true} component={AttributionPage} />
-                <Route path = "/Parts-Overview" exact={true} component={PartsOverviewPage} />
-                <Route path = "/Basic-Parts" exact={true} component={BasicPartsPage} />
-                <Route path = "/Human-Practices" exact={true} component={HumanPracticesPage} />
-                <Route path = "/Outreach-and-Engagement" exact={true} component={OutreachAndEngagementPage} />
-                <Route path = "/Medals-and-Awards" exact={true} component={MedalsAndAwardsPage} />
-                <Route path = "/Collaborations" exact={true} component={CollaborationsPage} />
+                <Route path="/" exact={true} component={HomePage} />
+                <Route path="/Description" exact={true} component={DescriptionPage} />
+                <Route path="/Protocols" exact={true} component={ProtocolsPage} />
+                <Route path="/Modelling" exact={true} component={ModellingPage} />
+                <Route path="/Design" exact={true} component={DesignPage} />
+                <Route path="/Safety" exact={true} component={SafetyPage} />
+                <Route path="/Lab-Book" exact={true} component={LabBookPage} />
+                <Route path="/Demonstration" exact={true} component={DemonstrationPage} />
+                <Route path="/Results" exact={true} component={ResultsPage} />
+                <Route path="/Team" exact={true} component={TeamPage} />
+                <Route path="/Attribution" exact={true} component={AttributionPage} />
+                <Route path="/Parts-Overview" exact={true} component={PartsOverviewPage} />
+                <Route path="/Basic-Parts" exact={true} component={BasicPartsPage} />
+                <Route path="/Human-Practices" exact={true} component={HumanPracticesPage} />
+                <Route path="/Outreach-and-Engagement" exact={true} component={OutreachAndEngagementPage} />
+                <Route path="/Medals-and-Awards" exact={true} component={MedalsAndAwardsPage} />
+                <Route path="/Collaborations" exact={true} component={CollaborationsPage} />
             </BrowserRouter>
         )
     }
